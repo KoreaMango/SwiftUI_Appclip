@@ -22,6 +22,9 @@
 		04B5DF42289649AF00AE7FFF /* ClipUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5DF41289649AF00AE7FFF /* ClipUITestsLaunchTests.swift */; };
 		04B5DF45289649AF00AE7FFF /* Clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 04B5DF20289649AD00AE7FFF /* Clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		04B5DF5D2897772A00AE7FFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B5DF5C2897772A00AE7FFF /* Preview Assets.xcassets */; };
+		04B5DF622897977900AE7FFF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5DF612897977900AE7FFF /* Model.swift */; };
+		04B5DF65289798C000AE7FFF /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5DF64289798C000AE7FFF /* Recipe.swift */; };
+		04B5DF6B2897B43900AE7FFF /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5DF6A2897B43900AE7FFF /* RecipeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,10 @@
 		04B5DF3F289649AF00AE7FFF /* ClipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipUITests.swift; sourceTree = "<group>"; };
 		04B5DF41289649AF00AE7FFF /* ClipUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		04B5DF5C2897772A00AE7FFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04B5DF5E28977B6200AE7FFF /* SwiftUIAppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIAppClip.entitlements; sourceTree = "<group>"; };
+		04B5DF612897977900AE7FFF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		04B5DF64289798C000AE7FFF /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		04B5DF6A2897B43900AE7FFF /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,11 +183,13 @@
 		04614D082896485600C2A532 /* SwiftUIAppClip */ = {
 			isa = PBXGroup;
 			children = (
+				04B5DF5E28977B6200AE7FFF /* SwiftUIAppClip.entitlements */,
 				04614D092896485600C2A532 /* SwiftUIAppClipApp.swift */,
 				04B5DF592897748C00AE7FFF /* Navigation */,
 				04B5DF582897747600AE7FFF /* Components */,
 				04B5DF5B289774FC00AE7FFF /* Resources */,
 				04B5DF572897746E00AE7FFF /* Model */,
+				04B5DF632897989900AE7FFF /* Recipe */,
 			);
 			path = SwiftUIAppClip;
 			sourceTree = "<group>";
@@ -243,6 +252,7 @@
 		04B5DF572897746E00AE7FFF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04B5DF612897977900AE7FFF /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -258,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				04614D0B2896485600C2A532 /* ContentView.swift */,
+				04B5DF6A2897B43900AE7FFF /* RecipeView.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -269,6 +280,14 @@
 				04614D0D2896485700C2A532 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		04B5DF632897989900AE7FFF /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				04B5DF64289798C000AE7FFF /* Recipe.swift */,
+			);
+			path = Recipe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -495,6 +514,9 @@
 			files = (
 				04614D0C2896485600C2A532 /* ContentView.swift in Sources */,
 				04614D0A2896485600C2A532 /* SwiftUIAppClipApp.swift in Sources */,
+				04B5DF622897977900AE7FFF /* Model.swift in Sources */,
+				04B5DF6B2897B43900AE7FFF /* RecipeView.swift in Sources */,
+				04B5DF65289798C000AE7FFF /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,6 +714,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIAppClip/SwiftUIAppClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAppClip/Preview Content\"";
@@ -712,7 +735,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -722,6 +745,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIAppClip/SwiftUIAppClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAppClip/Preview Content\"";
@@ -742,7 +766,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

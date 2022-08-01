@@ -4,9 +4,5 @@
 <dict>
 	<key>com.apple.developer.associated-domains</key>
 	<array/>
-	<key>com.apple.developer.parent-application-identifiers</key>
-	<array>
-		<string>$(AppIdentifierPrefix)net.ognam.SwiftUIAppClip</string>
-	</array>
 </dict>
 </plist>

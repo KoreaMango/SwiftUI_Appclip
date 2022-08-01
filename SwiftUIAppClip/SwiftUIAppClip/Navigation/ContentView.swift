@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Binding var recipe: [Recipe]
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List{
+            ForEach($recipe) { $recipe in
+                NavigationLink(destination: RecipeView(contents:  $recipe.contents,index: 0)){
+                    Text("\(recipe.title)")
+                }
+            }
+        }
+        .navigationTitle("Recipe")
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(recipe: .constant(Recipe.sampleData))
     }
 }

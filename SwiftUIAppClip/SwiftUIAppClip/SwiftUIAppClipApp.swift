@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct SwiftUIAppClipApp: App {
+    @StateObject private var store = Model()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView{
+                ContentView(recipe: $store.recipe)
+            }
         }
     }
 }

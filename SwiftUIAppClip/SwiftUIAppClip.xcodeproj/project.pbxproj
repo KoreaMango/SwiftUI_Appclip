@@ -186,7 +186,6 @@
 				04B5DF5E28977B6200AE7FFF /* SwiftUIAppClip.entitlements */,
 				04614D092896485600C2A532 /* SwiftUIAppClipApp.swift */,
 				04B5DF592897748C00AE7FFF /* Navigation */,
-				04B5DF582897747600AE7FFF /* Components */,
 				04B5DF5B289774FC00AE7FFF /* Resources */,
 				04B5DF572897746E00AE7FFF /* Model */,
 				04B5DF632897989900AE7FFF /* Recipe */,
@@ -255,13 +254,6 @@
 				04B5DF612897977900AE7FFF /* Model.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		04B5DF582897747600AE7FFF /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		04B5DF592897748C00AE7FFF /* Navigation */ = {
@@ -717,7 +709,7 @@
 				CODE_SIGN_ENTITLEMENTS = SwiftUIAppClip/SwiftUIAppClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAppClip/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAppClip/Resources\"";
 				DEVELOPMENT_TEAM = TDUR55YWW6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -748,7 +740,7 @@
 				CODE_SIGN_ENTITLEMENTS = SwiftUIAppClip/SwiftUIAppClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAppClip/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAppClip/Resources\"";
 				DEVELOPMENT_TEAM = TDUR55YWW6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

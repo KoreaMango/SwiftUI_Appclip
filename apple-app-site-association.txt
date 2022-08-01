@@ -1,0 +1,5 @@
+{
+    "appclips": {
+        "apps": ["개발자Team ID.앱클립 Bundle Identifier"]
+    }
+}

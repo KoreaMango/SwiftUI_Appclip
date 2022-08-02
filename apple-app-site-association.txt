@@ -1,5 +1,7 @@
 {
-    "appclips": {
-        "apps": ["개발자Team ID.앱클립 Bundle Identifier"]
-    }
+  "appclips": {
+    "apps": [
+      "alsrb6637.net.ognam.SwiftUIAppClip.Clip"
+    ]
+  }
 }

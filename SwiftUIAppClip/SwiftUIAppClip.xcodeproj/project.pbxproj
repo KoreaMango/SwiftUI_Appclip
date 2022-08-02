@@ -19,6 +19,11 @@
 		04B5DF622897977900AE7FFF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5DF612897977900AE7FFF /* Model.swift */; };
 		04B5DF65289798C000AE7FFF /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5DF64289798C000AE7FFF /* Recipe.swift */; };
 		04B5DF6B2897B43900AE7FFF /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5DF6A2897B43900AE7FFF /* RecipeView.swift */; };
+		04B5DF9C2899003000AE7FFF /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5DF9B2899003000AE7FFF /* RecipeListView.swift */; };
+		04B5DF9D289900C900AE7FFF /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5DF64289798C000AE7FFF /* Recipe.swift */; };
+		04B5DF9E289900C900AE7FFF /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5DF9B2899003000AE7FFF /* RecipeListView.swift */; };
+		04B5DF9F289900C900AE7FFF /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5DF6A2897B43900AE7FFF /* RecipeView.swift */; };
+		04B5DFA0289900C900AE7FFF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5DF612897977900AE7FFF /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +67,7 @@
 		04B5DF612897977900AE7FFF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		04B5DF64289798C000AE7FFF /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		04B5DF6A2897B43900AE7FFF /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		04B5DF9B2899003000AE7FFF /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +91,10 @@
 		04614CFD2896485600C2A532 = {
 			isa = PBXGroup;
 			children = (
+				04B5DF992898FFF800AE7FFF /* Shared */,
 				04614D082896485600C2A532 /* SwiftUIAppClip */,
+				04B5DF5C2897772A00AE7FFF /* Preview Assets.xcassets */,
+				04614D0D2896485700C2A532 /* Assets.xcassets */,
 				04B5DF21289649AD00AE7FFF /* Clip */,
 				04614D072896485600C2A532 /* Products */,
 			);
@@ -106,9 +115,6 @@
 				04B5DF5E28977B6200AE7FFF /* SwiftUIAppClip.entitlements */,
 				04614D092896485600C2A532 /* SwiftUIAppClipApp.swift */,
 				04B5DF592897748C00AE7FFF /* Navigation */,
-				04B5DF5B289774FC00AE7FFF /* Resources */,
-				04B5DF572897746E00AE7FFF /* Model */,
-				04B5DF632897989900AE7FFF /* Recipe */,
 			);
 			path = SwiftUIAppClip;
 			sourceTree = "<group>";
@@ -146,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				04614D0B2896485600C2A532 /* ContentView.swift */,
-				04B5DF6A2897B43900AE7FFF /* RecipeView.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -154,8 +159,6 @@
 		04B5DF5B289774FC00AE7FFF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				04B5DF5C2897772A00AE7FFF /* Preview Assets.xcassets */,
-				04614D0D2896485700C2A532 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -166,6 +169,26 @@
 				04B5DF64289798C000AE7FFF /* Recipe.swift */,
 			);
 			path = Recipe;
+			sourceTree = "<group>";
+		};
+		04B5DF992898FFF800AE7FFF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				04B5DF9A2899001B00AE7FFF /* View */,
+				04B5DF5B289774FC00AE7FFF /* Resources */,
+				04B5DF572897746E00AE7FFF /* Model */,
+				04B5DF632897989900AE7FFF /* Recipe */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		04B5DF9A2899001B00AE7FFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04B5DF6A2897B43900AE7FFF /* RecipeView.swift */,
+				04B5DF9B2899003000AE7FFF /* RecipeListView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B5DF9C2899003000AE7FFF /* RecipeListView.swift in Sources */,
 				04614D0C2896485600C2A532 /* ContentView.swift in Sources */,
 				04614D0A2896485600C2A532 /* SwiftUIAppClipApp.swift in Sources */,
 				04B5DF622897977900AE7FFF /* Model.swift in Sources */,
@@ -282,8 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B5DF9D289900C900AE7FFF /* Recipe.swift in Sources */,
 				04B5DF25289649AD00AE7FFF /* ContentView.swift in Sources */,
+				04B5DF9E289900C900AE7FFF /* RecipeListView.swift in Sources */,
+				04B5DFA0289900C900AE7FFF /* Model.swift in Sources */,
 				04B5DF23289649AD00AE7FFF /* ClipApp.swift in Sources */,
+				04B5DF9F289900C900AE7FFF /* RecipeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,13 +446,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = SwiftUIAppClip/SwiftUIAppClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAppClip/Resources\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAppClip\"";
 				DEVELOPMENT_TEAM = TDUR55YWW6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,13 +479,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = SwiftUIAppClip/SwiftUIAppClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAppClip/Resources\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAppClip\"";
 				DEVELOPMENT_TEAM = TDUR55YWW6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

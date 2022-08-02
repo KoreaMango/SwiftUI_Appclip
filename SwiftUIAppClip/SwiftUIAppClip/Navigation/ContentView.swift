@@ -8,18 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Binding var recipe: [Recipe]
-    
+
     var body: some View {
-        List{
-            ForEach($recipe) { $recipe in
-                NavigationLink(destination: RecipeView(contents:  $recipe.contents,index: 0)){
-                    Text("\(recipe.title)")
-                }
-            }
-        }
-        .navigationTitle("Recipe")
-        
+        RecipeListView()
     }
 }
 

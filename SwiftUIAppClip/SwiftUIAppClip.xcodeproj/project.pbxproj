@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		04614D0A2896485600C2A532 /* SwiftUIAppClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04614D092896485600C2A532 /* SwiftUIAppClipApp.swift */; };
 		04614D0C2896485600C2A532 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04614D0B2896485600C2A532 /* ContentView.swift */; };
-		04614D0E2896485700C2A532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04614D0D2896485700C2A532 /* Assets.xcassets */; };
+		04A8BE9B28994D5800492753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A8BE9A28994D5800492753 /* Assets.xcassets */; };
 		04B5DF23289649AD00AE7FFF /* ClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5DF22289649AD00AE7FFF /* ClipApp.swift */; };
 		04B5DF25289649AD00AE7FFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5DF24289649AD00AE7FFF /* ContentView.swift */; };
 		04B5DF27289649AE00AE7FFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B5DF26289649AE00AE7FFF /* Assets.xcassets */; };
@@ -54,7 +54,7 @@
 		04614D062896485600C2A532 /* SwiftUIAppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04614D092896485600C2A532 /* SwiftUIAppClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAppClipApp.swift; sourceTree = "<group>"; };
 		04614D0B2896485600C2A532 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		04614D0D2896485700C2A532 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04A8BE9A28994D5800492753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04B5DF20289649AD00AE7FFF /* Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B5DF22289649AD00AE7FFF /* ClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipApp.swift; sourceTree = "<group>"; };
 		04B5DF24289649AD00AE7FFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,8 +93,6 @@
 			children = (
 				04B5DF992898FFF800AE7FFF /* Shared */,
 				04614D082896485600C2A532 /* SwiftUIAppClip */,
-				04B5DF5C2897772A00AE7FFF /* Preview Assets.xcassets */,
-				04614D0D2896485700C2A532 /* Assets.xcassets */,
 				04B5DF21289649AD00AE7FFF /* Clip */,
 				04614D072896485600C2A532 /* Products */,
 			);
@@ -112,11 +110,21 @@
 		04614D082896485600C2A532 /* SwiftUIAppClip */ = {
 			isa = PBXGroup;
 			children = (
+				04A8BE9928994C9200492753 /* Preview Content */,
 				04B5DF5E28977B6200AE7FFF /* SwiftUIAppClip.entitlements */,
 				04614D092896485600C2A532 /* SwiftUIAppClipApp.swift */,
-				04B5DF592897748C00AE7FFF /* Navigation */,
+				04614D0B2896485600C2A532 /* ContentView.swift */,
+				04A8BE9A28994D5800492753 /* Assets.xcassets */,
 			);
 			path = SwiftUIAppClip;
+			sourceTree = "<group>";
+		};
+		04A8BE9928994C9200492753 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04B5DF5C2897772A00AE7FFF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		04B5DF21289649AD00AE7FFF /* Clip */ = {
@@ -146,14 +154,6 @@
 				04B5DF612897977900AE7FFF /* Model.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		04B5DF592897748C00AE7FFF /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				04614D0B2896485600C2A532 /* ContentView.swift */,
-			);
-			path = Navigation;
 			sourceTree = "<group>";
 		};
 		04B5DF5B289774FC00AE7FFF /* Resources */ = {
@@ -272,8 +272,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A8BE9B28994D5800492753 /* Assets.xcassets in Resources */,
 				04B5DF5D2897772A00AE7FFF /* Preview Assets.xcassets in Resources */,
-				04614D0E2896485700C2A532 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,9 +450,10 @@
 				CODE_SIGN_ENTITLEMENTS = SwiftUIAppClip/SwiftUIAppClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAppClip\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAppClip/Preview Content\"";
 				DEVELOPMENT_TEAM = TDUR55YWW6;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -464,7 +465,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = net.ognam.SwiftUIAppClip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -483,9 +484,10 @@
 				CODE_SIGN_ENTITLEMENTS = SwiftUIAppClip/SwiftUIAppClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAppClip\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAppClip/Preview Content\"";
 				DEVELOPMENT_TEAM = TDUR55YWW6;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -497,7 +499,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = net.ognam.SwiftUIAppClip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -529,7 +531,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = net.ognam.SwiftUIAppClip.Clip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -561,7 +563,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = net.ognam.SwiftUIAppClip.Clip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

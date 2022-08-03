@@ -28,26 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "04614D152896485700C2A532"
-               BuildableName = "SwiftUIAppClipTests.xctest"
-               BlueprintName = "SwiftUIAppClipTests"
-               ReferencedContainer = "container:SwiftUIAppClip.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "04614D1F2896485700C2A532"
-               BuildableName = "SwiftUIAppClipUITests.xctest"
-               BlueprintName = "SwiftUIAppClipUITests"
-               ReferencedContainer = "container:SwiftUIAppClip.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
